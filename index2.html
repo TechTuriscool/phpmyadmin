@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma de Certificado</title>
+    <link href="style-segundaInterfaz.css" rel="stylesheet">
+</head>
+<body>
+    <div class="encabezado">
+        <h3 class="encabezadoContent">Firma de Certificado FUNDAE</h3>
+    </div>
+    <div class="cuerpoWeb">
+        <h1 class="encabezadoFormulario">Introduce tu correo electrónico &#128232;</h1>
+        <hr style="width: 50%; color: #000;">
+        <h2 class="subEncabezadoFormulario">¡Por motivos de seguridad tenemos que comprobar quién accede al diploma!</h2>
+        <h2 class="subEncabezadoFormulario2">Por favor, <span>introduce el correo con el que has iniciado sesión en la plataforma</span> <br> así sabremos que eres tú y tendrás acceso a tu diploma.</h2>
+        <form id="buscarUsuarioForm">
+            <div class="correo">
+              <input type="email" id="correo" placeholder="Correo electrónico" required>
+            </div>
+            <div class="boton">
+              <button type="submit">Comprobar mi correo</button>
+            </div>
+        </form>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modal-message">Mensaje de error aquí</p>
+            </div>
+        </div>
+        
+        <div id="myModal">
+            <p id="modal-message"></p>
+            <div id="popupContainer" style="display: none;">
+                <button id="enlaceUsuario" href="" class="popupButton">¡ACCEDE A TU CERTIFICADO!</button>
+            </div>
+            <div id="resultado"></div>
+
+        </div>
+        </div>
+        
+        <script src="script-segundaInterfaz.js"></script>
+        <div class="final">
+        <img class = "foto_final" src="https://turiscool.com/wp-content/uploads/2022/09/Recurso-6.svg">
+        </div>
+</body>
+</html>
